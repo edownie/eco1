@@ -1,3 +1,71 @@
-<h1>Home#index</h1>
-<div>hi hi u</div>
-<div>gtest</div>
+<body>
+<h1><font face="arial">eco1</font></h1>
+<div style="position:relative">Building Life Cycle Site</div>
+<div style="position:relative;top:100px">economy</div>
+<div style="position:relative;left:300px;top:400px">experience</div>
+</body>
+
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+    new Highcharts.Chart({
+      chart: {
+        renderTo: "orders_chart"
+      },
+      title: {
+        text: "Orders by Day"
+      },
+      xAxis: {
+        type: "datetime"
+      },
+      yAxis: {
+        title: {
+          text: "Economy"
+        }
+      },
+      tooltip: {
+        formatter: function() {
+          return Highcharts.dateFormat("%B %e, %Y", this.x) + ': ' +
+            "$" + Highcharts.numberFormat(this.y, 2);
+        }
+      },
+      series: [
+
+      ]
+    });
+  });
+</script>
+<div id="orders_chart" style="width:360px; height:300px;position:relative;left:100px"></div>
+
+<p style="position:absolute;left:100px;top:180px">DLE5</p>
+<p style="position:absolute;left:500px;top:180px">DRDE28</p>
+<p style="position:absolute;left:200px;top:320px">QOC1</p>
+<p style="position:absolute;left:300px;top:180px">ICA11</p>
+<p style="position:absolute;left:400px;top:280px">ECM20</p>
+<p style="position:absolute;left:150px;top:200px">VM03</p>
+<p style="position:absolute;left:350px;top:100px">FN51</p>
+<p style="position:absolute;left:120px;top:380px">ISC6</p>
+<p style="position:absolute;left:220px;top:300px">SMP27</p>
+<p style="position:absolute;left:100px;top:110px">EDC18</p>
+<p style="position:absolute;left:390px;top:390px">CPP21</p>
+<p style="position:absolute;left:400px;top:350px">DLE28</p>
+<p style="position:absolute;left:420px;top:160px">RMR22</p>
+<p style="position:absolute;left:200px;top:480px">PTG3</p>
+<p style="position:absolute;left:500px;top:130px">STR24</p>
+<p style="position:absolute;left:500px;top:480px">CMO5</p>
+
+
+<table class="pretty">
+  <tr>
+    <th>Number</th>
+    <th>Purchased</th>
+    <th>Shipping</th>
+    <th>Total</th>
+  </tr>
+    <tr>
+      <td>id</td>
+      <td>purchased_at</td>
+      <td>shipping</td>
+      <td class="price">price</td>
+    </tr>
+</table>
+ 100%; height: 400px"></div>
