@@ -12,6 +12,8 @@ class HomeController < ApplicationController
     @cleanair = Twitter.search("#cleanair -rt").first.text
     @openinnovation = Twitter.search("#openinnovation -rt").first.text
     @greenbuilding = Twitter.search("#greenbuilding -rt").first.text
+    @software = Twitter.search("#software -rt").first.text
+    @incandescent = Twitter.search("#incandescent -rt").first.text
     @gis = Twitter.search("#gis -rt").first.text
     @energy = Twitter.search("#energy -rt").first.text
     @greenrealestate = Twitter.search("#greenrealestate -rt").first.text
