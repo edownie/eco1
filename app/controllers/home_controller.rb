@@ -15,6 +15,7 @@ class HomeController < ApplicationController
     @software = Twitter.search("#software -rt").first.text
     @incandescent = Twitter.search("#incandescent -rt").first.text
     @gis = Twitter.search("#gis -rt").first.text
+    @prefab = Twitter.search("#prefab -rt").first.text
     @energy = Twitter.search("#energy -rt").first.text
     @greenrealestate = Twitter.search("#greenrealestate -rt").first.text
     @crm = Twitter.search("#crm -rt").first.text
