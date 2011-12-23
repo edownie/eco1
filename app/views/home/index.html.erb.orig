@@ -1,0 +1,54 @@
+
+
+<b><p style="display:none;align="right"><%= link_to 'HighCharts', items_path %></p></b>
+<body>
+<h1><font face="arial" style="position:absolute;left:40px;top:50px">infravironment</font></h1>
+<div style="position:absolute;left:240px;top:50px">Building Life Cycle Site</div>
+</body>
+
+<div id="tweet-results">
+<div id="orders_chart" style="width:360px; height:300px;position:relative;left:100px"></div>
+<p style="position:absolute;left:100px;top:220px"><%= @architecture.tweet %></p>
+<p style="display:none;position:absolute;left:100px;top:180px"><%= @openinnovation.tweet %></p>
+<p style="position:absolute;left:80px;top:180px"><%= @cloudcomputing.tweet %></p>
+<p style="position:absolute;left:100px;top:180px"><%= @usgbc.tweet %></p>
+<p style="display:none;position:absolute;left:100px;top:120px"><%= @cleanair.tweet %></p>
+<p style="display:none;position:absolute;left:150px;top:200px"><%= @greenrealestate.tweet %></p>
+<p style="position:absolute;left:60px;top:140px"><%= @smallbusiness.tweet %></p>
+<p style="position:absolute;left:130px;top:260px"><%= @greenbuilding.tweet %></p>
+<p style="position:absolute;left:160px;top:300px"><%= @applab.tweet %></p>
+<p style="position:absolute;left:150px;top:200px"><%= @incandescent.tweet %></p>
+<p style="position:absolute;left:100px;top:120px"><%= @software.tweet %></p>
+<p style="position:absolute;left:160px;top:380px"><%= @biodiversity.tweet %></p>
+<p style="position:absolute;left:80px;top:280px"><%= @crm.tweet %></p>
+<p style="position:absolute;left:150px;top:360px"><%= @construction.tweet %></p>
+<p style="position:absolute;left:80px;top:400px"><%= @bim.tweet %></p>
+<p style="position:absolute;left:110px;top:420px"><%= @energy.tweet %></p>
+<p style="position:absolute;left:60px;top:340px"><%= @solar.tweet %></p>
+<p style="position:absolute;left:100px;top:320px"><%= @gis.tweet %></p>
+<p style="position:absolute;left:140px;top:160px"><%= @aia.tweet %></p>
+<p style="position:absolute;left:60px;top:240px"><%= @inhabitat.tweet %></p>
+<p style="display:none;position:absolute;left:500px;top:480px"><%= @sustainable.tweet %></p>
+</div>
+<div>
+<p style="position:absolute;left:80px;top:320px">~HideTweets~/p><!-- <p>UQC41</p> -->
+<p style="position:absolute;left:40px;top:240px">~</p><!-- <p>NIA11</p> -->
+<p style="position:absolute;left:120px;top:260px">~</p><!-- <p>MET20</p> -->
+<p style="position:absolute;left:80px;top:120px">~</p><!-- <p>MV03</p> -->
+<p style="position:absolute;left:40px;top:140px">~</p><!-- <p>NF51</p> -->
+<p style="position:absolute;left:60px;top:180px">~</p><!-- <p>SNC7</p> -->
+<p style="position:absolute;left:140px;top:200px">~</p><!-- <p>MSP27</p> -->
+<p style="position:absolute;left:40px;top:340px">~</p><!-- <p>PCP21</p> -->
+<p style="position:absolute;left:140px;top:300px">~</p><!-- <p>EDT28</p> -->
+<p style="position:absolute;left:120px;top:360px">~</p><!-- <p>MRO22</p> -->
+<p style="position:absolute;left:140px;top:380px">~</p><!-- <p>TPG3</p> -->
+<p style="position:absolute;left:60px;top:400px">~</p><!-- <p>TSR24</p> -->
+<p style="position:absolute;left:120px;top:160px">~</p><!-- <p>PLR40</p> -->
+<p style="position:absolute;left:80px;top:220px">~</p><!-- <p>DET18</p> -->
+<p style="position:absolute;left:80px;top:420px">~</p><!-- <p>PCS25</p> -->
+<p style="position:absolute;left:60px;top:280px">~</p><!-- <p>IDR15</p> -->
+</div>
+
+<h1><font face="arial" style="position:absolute;left:40px;top:500px">email</font></h1><p style="position:absolute;top:487px;left:120px">for infravironment (design by E. Downie, AIA increasing the capacity of Architecture to improve on the latest discoveries)</p>
+
+ <p style="position:absolute;top:640px;left:160px">Dec. 2011 terms of use: less stringent than exceptions to, or exclusions from, those of any isp</p>

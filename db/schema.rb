@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111126030925) do
+ActiveRecord::Schema.define(:version => 20111223203654) do
 
   create_table "econavigates", :force => true do |t|
     t.datetime "created_at"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(:version => 20111126030925) do
 
   create_table "items", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tweets", :force => true do |t|
+    t.string   "tweet"
+    t.string   "label"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
