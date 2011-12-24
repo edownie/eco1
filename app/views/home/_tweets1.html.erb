@@ -7,9 +7,24 @@
 <% @tweets1.each do |tweet| %>
   <tr>
 	<td>~</td>
-	<td>#<%= tweet.label %>
+	<td id="clickme">#<%= tweet.label %>
     <td><%= tweet.tweet %></td>
   </tr>
 <% end %>
 </table>
 <hr>
+
+<script>
+$("tr").hover(
+  function () {
+    $("div#tweets2").fadeIn('slow', function() {
+	    // Animation complete.
+	    $("div#tweets3").slideDown('slow', function() {
+		    // Animation complete.
+		    $("div#tweets4").show('slow', function() {
+			    // Animation complete.
+  });				
+  });
+  });
+});
+</script>
