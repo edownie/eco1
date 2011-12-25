@@ -1,6 +1,4 @@
 class HomeController < ApplicationController
-  require 'rubygems'
-  require 'twitter'
   
   def index
     # %w{ architecture economy sustainable cleanair openinnovation greenbuilding software incandescent gis energy greenrealestate crm construction solar biodiversity bim cloudcomputing inhabitat smallbusiness aia applab adaptivereuse }
