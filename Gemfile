@@ -6,7 +6,8 @@ gem 'twitter-text'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem "pg", :group => :production
+gem "sqlite3-ruby", :group => :development
 
 gem 'json'
 
