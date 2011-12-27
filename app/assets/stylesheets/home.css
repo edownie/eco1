@@ -6,7 +6,51 @@
 #header {  
     background: #cdcdcd;  
 }  
+
+#r1 {  
+    background: #cdcdcd;  
+    float: center;  
+    width: 100px;  
+	height:20px;
+    background: #808080;
+}  
+
+#r2 {  
+    background: #cdcdcd;  
+    float: center;  
+	top:200px;
+    width: 100px;  
+	height:20px;
+    background: #808080;
+}
   
+#r3 {  
+    background: #cdcdcd;  
+    float: center;  
+	top:250px;
+    width: 100px;  
+	height:20px;
+    background: #808080;
+}
+
+#r3 {  
+    background: #cdcdcd;  
+    float: center;  
+	top:300px;
+    width: 100px;  
+	height:20px;
+    background: #808080;
+}
+
+#r4 {  
+    background: #cdcdcd;  
+    float: center;  
+	top:350px;
+    width: 100px;  
+	height:20px;
+    background: #808080;
+}
+
 #sidebar {  
     float: left;  
     width: 200px;  
