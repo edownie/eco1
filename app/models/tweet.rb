@@ -2,6 +2,10 @@ class Tweet < ActiveRecord::Base
   def self.get_latest_tweets
     @architecture = Twitter.search("#architecture -rt").first.text unless Twitter.search("#architecture -rt").first == nil
     Tweet.create!(:tweet => "#{@architecture}", :label => "architecture")
+    @science = Twitter.search("#science -rt").first.text unless Twitter.search("#science -rt").first == nil
+    Tweet.create!(:tweet => "#{@science}", :label => "science")
+    @building = Twitter.search("#building -rt").first.text unless Twitter.search("#building -rt").first == nil
+    Tweet.create!(:tweet => "#{@building}", :label => "building")
     @environmental = Twitter.search("#environmental -rt").first.text unless Twitter.search("#environmental -rt").first == nil
     Tweet.create!(:tweet => "#{@environmental}", :label => "environmental")
     @leadership = Twitter.search("#leadership -rt").first.text unless Twitter.search("#leadership -rt").first == nil
