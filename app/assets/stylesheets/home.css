@@ -1,5 +1,5 @@
 #wrapper {  
-    width: 600px;  
+    width: 1000px;  
 }  
   
   
@@ -9,12 +9,13 @@
   
 #sidebar {  
     float: left;  
-    width: 180px;  
+    width: 200px;  
     background: #ccc;  
     margin: 10px;  
+    font-size:30px;
+    text-align:center;
 }  
-  
 #content {  
     float: left;  
-    width: 400px;  
+    width: 750px;  
 }

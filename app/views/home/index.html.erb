@@ -1,7 +1,7 @@
 <div id="wrapper">
 	<div id="header"> 
 		<%= form_tag(update_tweets_path) do -%>
-		  <div><%= submit_tag 'Update Tweets' %></div>
+		  <div align='right'><%= submit_tag 'Update Tweets' %></div>
 		<% end -%>
 
 		<h1>infravironment</h1><p style="position:absolute;top:-10px;left:230px">
@@ -10,18 +10,16 @@
 	</div>
 
 	<div id="sidebar">
-		<ul>
-		<li><span id='one'>triangle</span></li>
-		<li><span id='two'>pentagon</span></li>
-		<li><span id='three'>star</span></li>
-		<li><span id='four'>moon</span></li>
-	  </ul>
+		<span id='one'>triangle</span></br>
+		<span id='two'>pentagon</span></br>
+		<span id='three'>star</span></br>
+		<span id='four'>moon</span>
 	</div>
 
 	<div id="content">
-		<div id='tweets1'style="position:absolute;left:180px"><%= render :partial => 'tweets1' %></div>
-		<div id='tweets2' style="display:none;position:absolute;top:350px;left:180px"><%= render :partial => 'tweets2' %></div>
-		<div id='tweets3' style="display:none;position:absolute;top:600px;left:180px"><%= render :partial => 'tweets3' %></div>
-		<div id='tweets4' style="display:none;position:absolute;top:820px;left:180px"><%= render :partial => 'tweets4' %></div>
+		<div id='tweets1'style=""><%= render :partial => 'tweets1' %></div>
+		<div id='tweets2' style="display:none"><%= render :partial => 'tweets2' %></div>
+		<div id='tweets3' style="display:none"><%= render :partial => 'tweets3' %></div>
+		<div id='tweets4' style="display:none"><%= render :partial => 'tweets4' %></div>
 	</div>
 </wrapper>
