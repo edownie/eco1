@@ -17,9 +17,84 @@
 	</div>
 
 	<div id="content">
-		<div id='tweets1'style=""><%= render :partial => 'tweets1' %></div>
+		<div id='tweets1'style="display:none"><%= render :partial => 'tweets1' %></div>
 		<div id='tweets2' style="display:none"><%= render :partial => 'tweets2' %></div>
 		<div id='tweets3' style="display:none"><%= render :partial => 'tweets3' %></div>
 		<div id='tweets4' style="display:none"><%= render :partial => 'tweets4' %></div>
 	</div>
 </wrapper>
+
+<script>
+$("span#one").hover(
+  function () {
+    $("div#tweets1").show('fast', function() {
+	    // Animation complete.
+	$("div#tweets2").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets3").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets4").hide('fast', function() {
+		// Animation complete.
+  	});				
+  	});
+  	});
+  	});
+});
+</script>
+
+
+<script>
+$("span#two").hover(
+  function () {
+    $("div#tweets1").hide('fast', function() {
+	    // Animation complete.
+	$("div#tweets2").show('fast', function() {
+		// Animation complete.
+	$("div#tweets3").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets4").hide('fast', function() {
+		// Animation complete.
+  	});				
+  	});
+  	});
+  	});
+});
+</script>
+
+
+<script>
+$("span#three").hover(
+  function () {
+    $("div#tweets1").hide('fast', function() {
+	    // Animation complete.
+	$("div#tweets2").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets3").show('fast', function() {
+		// Animation complete.
+	$("div#tweets4").hide('fast', function() {
+		// Animation complete.
+  	});				
+  	});
+  	});
+  	});
+});
+</script>
+
+
+<script>
+$("span#four").hover(
+  function () {
+    $("div#tweets1").hide('fast', function() {
+	    // Animation complete.
+	$("div#tweets2").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets3").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets4").show('fast', function() {
+		// Animation complete.
+  	});				
+  	});
+  	});
+  	});
+});
+</script>
