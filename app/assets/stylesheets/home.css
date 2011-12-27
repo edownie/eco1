@@ -1,0 +1,20 @@
+#wrapper {  
+    width: 600px;  
+}  
+  
+  
+#header {  
+    background: #cdcdcd;  
+}  
+  
+#sidebar {  
+    float: left;  
+    width: 180px;  
+    background: #ccc;  
+    margin: 10px;  
+}  
+  
+#content {  
+    float: left;  
+    width: 400px;  
+}
