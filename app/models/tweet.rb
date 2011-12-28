@@ -1,9 +1,9 @@
 class Tweet < ActiveRecord::Base
   def self.get_latest_tweets
     @tweet_hash_tags = [
-      "architecture", "economy", "sustainable", "crm", "science", "building", "environmental", "leadership", "adaptivereuse",
+      "architecture", "economy", "sustainable", "crm", "science", "building", "environmental", "leadership", "conservation", "adaptivereuse", "iaq",
       "cleanair", "openinnovation", "greenbuilding", "software", "incandescent", "gis", "energy", "greenrealestate",
-      "construction", "solar", "biodiversity", "bim", "cloudcomputing", "inhabitat", "smallbusiness", "aia", "applab" 
+      "construction", "solar", "biodiversity", "bim", "cloudcomputing", "inhabitat", "smallbusiness", "aiachat", "applab" 
        ]
        
     @tweet_hash_tags.each do |name|
