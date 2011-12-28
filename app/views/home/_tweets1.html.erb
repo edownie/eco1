@@ -6,7 +6,7 @@
 <% @tweets1.each do |tweet| %>
   <tr>
 	<td>~</td>
-	<td id="clickme">#<%= tweet.label %>
+	<td id="clickme">#<a href="http://twitter.com/#!/search/<%= tweet.label %>" target="new"><%= tweet.label %></a></td>
     <td><%= tweet.tweet %></td>
   </tr>
 <% end %>
