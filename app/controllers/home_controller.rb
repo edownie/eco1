@@ -16,7 +16,7 @@ class HomeController < ApplicationController
       Tweet.find_by_label(tweet)
     end
     
-    @tweets4 = %w{ inhabitat smallbusiness aiachat applab adaptivereuse test test1 }
+    @tweets4 = %w{ inhabitat smallbusiness aiachat applab adaptivereuse }
     @tweets4.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
