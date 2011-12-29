@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  caches_page :index
   def index
     # %w{ architecture economy sustainable cleanair openinnovation greenbuilding software incandescent gis energy greenrealestate crm construction solar biodiversity bim cloudcomputing inhabitat smallbusiness aia applab adaptivereuse }
     @tweets1 = %w{ architecture economy conservation sustainable cleanair leadership openinnovation science environmental building iaq }
