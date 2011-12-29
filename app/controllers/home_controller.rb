@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   caches_page :index
   def index
-    @tweets1 = %w{ architecture economy conservation sustainable cleanair leadership openinnovation science environmental building iaq }
+    @tweets1 = %w{ architecture economy conservation sustainable cleanair leadership openinnovation science environmental building iaq microgrid }
     @tweets1.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
