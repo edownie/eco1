@@ -6,7 +6,7 @@ class HomeController < ApplicationController
       Tweet.find_by_label(tweet)
     end
     
-    @tweets2 = %w{ greenbuilding software incandescent gis energy greenrealestate economy }
+    @tweets2 = %w{ greenbuilding software incandescent gis energy greenrealestate economy cleantech walkability multimedia residential }
     @tweets2.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
