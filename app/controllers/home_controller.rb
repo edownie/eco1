@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  caches_page :index
+  # caches_page :index
   def index
     @tweets1 = %w{ architecture conservation sustainable cleanair leadership openinnovation science environmental building iaq }
     @tweets1.collect! do |tweet| 
@@ -23,7 +23,7 @@ class HomeController < ApplicationController
   end 
   
   def update_tweets
-    expire_page :action => :index
+    # expire_page :action => :index
     Tweet.get_latest_tweets
     redirect_to home_index_path
   end
