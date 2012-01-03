@@ -15,14 +15,30 @@
 		<span id='one'><div id="r1"></div></span></br>
 		<span id='two'><div id="r2"></div></span></br>
 		<span id='three'><div id="r3"></div></span></br>
-		<span id='four'><div id="r4"></div></span>
+		<span id='four'><div id="r4"></div></span></br>
+		<span id='five'><div id="r1"></div></span></br>
+		<span id='six'><div id="r2"></div></span></br>
+		<span id='seven'><div id="r3"></div></span></br>
+		<span id='eight'><div id="r4"></div></span></br>
+		<span id='nine'><div id="r1"></div></span></br>
+		<span id='ten'><div id="r2"></div></span></br>
+		<span id='eleven'><div id="r3"></div></span></br>
+		<span id='twelve'><div id="r4"></div></span></br>
 	</div>
 
 	<div id="content">
-		<div id='tweets1'style="display:none"><%= render :partial => 'tweets1' %></div>
+		<div id='tweets1' style="display:none"><%= render :partial => 'tweets1' %></div>
 		<div id='tweets2' style="display:none"><%= render :partial => 'tweets2' %></div>
 		<div id='tweets3' style="display:none"><%= render :partial => 'tweets3' %></div>
 		<div id='tweets4' style="display:none"><%= render :partial => 'tweets4' %></div>
+		<div id='tweets5' style="display:none"><%= render :partial => 'tweets5' %></div>
+		<div id='tweets6' style="display:none"><%= render :partial => 'tweets6' %></div>
+		<div id='tweets7' style="display:none"><%= render :partial => 'tweets7' %></div>
+		<div id='tweets8' style="display:none"><%= render :partial => 'tweets8' %></div>
+		<div id='tweets9' style="display:none"><%= render :partial => 'tweets9' %></div>
+		<div id='tweets10' style="display:none"><%= render :partial => 'tweets10' %></div>
+		<div id='tweets11' style="display:none"><%= render :partial => 'tweets11' %></div>
+		<div id='tweets12' style="display:none"><%= render :partial => 'tweets12' %></div>
 	</div>
 </wrapper>
 
@@ -37,13 +53,15 @@ $("span#one").hover(
 		// Animation complete.
 	$("div#tweets4").hide('fast', function() {
 		// Animation complete.
-  	});				
+	$("div#tweets5").hide('fast', function() {
+		// Animation complete.
+  	});	
+  	});
   	});
   	});
   	});
 });
 </script>
-
 
 <script>
 $("span#two").hover(
@@ -56,13 +74,15 @@ $("span#two").hover(
 		// Animation complete.
 	$("div#tweets4").hide('fast', function() {
 		// Animation complete.
+	$("div#tweets5").hide('fast', function() {
+		// Animation complete.
+  	});
   	});				
   	});
   	});
   	});
 });
 </script>
-
 
 <script>
 $("span#three").hover(
@@ -75,13 +95,15 @@ $("span#three").hover(
 		// Animation complete.
 	$("div#tweets4").hide('fast', function() {
 		// Animation complete.
+	$("div#tweets5").hide('fast', function() {
+		// Animation complete.
+  	});
   	});				
   	});
   	});
   	});
 });
 </script>
-
 
 <script>
 $("span#four").hover(
@@ -94,7 +116,32 @@ $("span#four").hover(
 		// Animation complete.
 	$("div#tweets4").show('fast', function() {
 		// Animation complete.
-  	});				
+	$("div#tweets5").hide('fast', function() {
+		// Animation complete.  
+  	});
+	});				
+  	});
+  	});
+  	});
+});
+</script>
+
+
+<script>
+$("span#five").hover(
+  function () {
+    $("div#tweets1").hide('fast', function() {
+	    // Animation complete.
+	$("div#tweets2").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets3").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets4").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets5").show('fast', function() {
+		// Animation complete.  
+  	});
+	});				
   	});
   	});
   	});
