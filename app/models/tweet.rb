@@ -1,5 +1,6 @@
 class Tweet < ActiveRecord::Base
   def self.get_latest_tweets
+    Tweet.destroy_all
     @tweet_hash_tags = [
       "architecture", "economy", "sustainable", "crm", "science", "building", "environmental", "leadership", "conservation", "adaptivereuse", "iaq",
       "cleanair", "openinnovation", "greenbuilding", "software", "incandescent", "gis", "energysaving", "greenrealestate",
