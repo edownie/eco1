@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @tweets1 = %w{ architecture conservation sustainable }
+    @tweets1 = %w{ architect conservation sustainable }
     @tweets1.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
@@ -25,7 +25,7 @@ class HomeController < ApplicationController
       Tweet.find_by_label(tweet)
     end
     
-    @tweets6 = %w{ science environmental building }
+    @tweets6 = %w{ science environmental fuelcell building }
     @tweets6.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
