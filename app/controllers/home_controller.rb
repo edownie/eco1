@@ -10,7 +10,7 @@ class HomeController < ApplicationController
       Tweet.find_by_label(tweet)
     end
     
-    @tweets3 = %w{ crm construction solar }
+    @tweets3 = %w{ themesh crm construction }
  @tweets3.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
@@ -20,12 +20,12 @@ class HomeController < ApplicationController
       Tweet.find_by_label(tweet)
     end
 
-    @tweets5 = %w{ cleanair leadership openinnovation }
+    @tweets5 = %w{ solar cleanair leadership openinnovation }
     @tweets5.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
     
-    @tweets6 = %w{science environmental building  }
+    @tweets6 = %w{ science environmental building }
     @tweets6.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
@@ -35,7 +35,7 @@ class HomeController < ApplicationController
       Tweet.find_by_label(tweet)
     end
     
-    @tweets8 = %w{ gis energy greenrealestate }
+    @tweets8 = %w{ gis energysaving greenrealestate }
     @tweets8.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
@@ -50,7 +50,7 @@ class HomeController < ApplicationController
       Tweet.find_by_label(tweet)
     end
     
-    @tweets11 = %w{ themesh collcons transit }
+    @tweets11 = %w{ collcons transit }
     @tweets11.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end

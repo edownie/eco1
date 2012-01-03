@@ -18,7 +18,6 @@
 #r2 {  
     background: #cdcdcd;  
     float: center;  
-	top:200px;
     width: 100px;  
 	height:20px;
     background: #808080;
@@ -33,16 +32,16 @@
     background: #808080;
 }
 
-#r3 {  
+#r4 {  
     background: #cdcdcd;  
-    float: center;  
+    float: right;  
 	top:300px;
     width: 100px;  
 	height:20px;
     background: #808080;
 }
 
-#r4 {  
+#r5 {  
     background: #cdcdcd;  
     float: center;  
 	top:350px;
@@ -51,9 +50,33 @@
     background: #808080;
 }
 
+#r6 {  
+    background: #cdcdcd;  
+    float: center;  
+    width: 100px;  
+	height:20px;
+    background: #808080;
+}
+
+#r7 {  
+    background: #cdcdcd;  
+    float: center;  
+    width: 100px;  
+	height:20px;
+    background: #808080;
+}
+
+#r8 {  
+    background: #cdcdcd;  
+    float: center;  
+    width: 100px;  
+	height:20px;
+    background: #808080;
+}
+
 #sidebar {  
     float: left;  
-    width: 200px;  
+    width: 180px;  
     background: #ccc;  
     margin: 10px;  
     font-size:30px;
