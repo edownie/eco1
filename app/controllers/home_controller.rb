@@ -1,65 +1,18 @@
 class HomeController < ApplicationController
   def index
-    @tweets1 = %w{ architect conservation sustainable }
-    @tweets1.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets2 = %w{ greenbuilding software incandescent }
-  @tweets2.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets3 = %w{ themesh crm construction }
- @tweets3.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets4 = %w{ inhabitat smallbusiness aiachat }
- @tweets4.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-
-    @tweets5 = %w{ solar cleanair leadership openinnovation }
-    @tweets5.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets6 = %w{ science environmental fuelcell building }
-    @tweets6.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets7 = %w{ iaq multimedia residential }
-    @tweets7.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets8 = %w{ gis energysaving greenrealestate }
-    @tweets8.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets9 = %w{ economy cleantech walkability }
-    @tweets9.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets10 = %w{ microgrid biodiversity bim }
-    @tweets10.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets11 = %w{ collcons transit }
-    @tweets11.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-    
-    @tweets12 = %w{ applab adaptivereuse cloudcomputing }
-    @tweets12.collect! do |tweet| 
-      Tweet.find_by_label(tweet)
-    end
-  end 
+    @tweets1 = Tweet.find_all_by_hashtag_id(1)
+    @tweets2 = Tweet.find_all_by_hashtag_id(2)
+    @tweets3 = Tweet.find_all_by_hashtag_id(3)
+    @tweets4 = Tweet.find_all_by_hashtag_id(4)
+    @tweets5 = Tweet.find_all_by_hashtag_id(5)
+    @tweets6 = Tweet.find_all_by_hashtag_id(6)
+    @tweets7 = Tweet.find_all_by_hashtag_id(7)
+    @tweets8 = Tweet.find_all_by_hashtag_id(8)
+    @tweets9 = Tweet.find_all_by_hashtag_id(9)
+    @tweets10 = Tweet.find_all_by_hashtag_id(10)
+    @tweets11 = Tweet.find_all_by_hashtag_id(11)
+    @tweets12 = Tweet.find_all_by_hashtag_id(12)
+  end
   
   def update_tweets
     Tweet.destroy_all
