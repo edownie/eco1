@@ -17,7 +17,7 @@
 
 #r2 {  
     background: #cdcdcd;  
-    float: center;  
+    float: right;  
     width: 100px;  
 	height:20px;
     background: #808080;
@@ -43,7 +43,7 @@
 
 #r5 {  
     background: #cdcdcd;  
-    float: center;  
+    float: left;  
 	top:350px;
     width: 100px;  
 	height:20px;
@@ -52,7 +52,7 @@
 
 #r6 {  
     background: #cdcdcd;  
-    float: center;  
+    float: right;  
     width: 100px;  
 	height:20px;
     background: #808080;
@@ -76,9 +76,9 @@
 
 #sidebar {  
     float: left;  
-    width: 180px;  
+    width: 150px;  
     background: #ccc;  
-    margin: 10px;  
+    margin: 25px;  
     font-size:30px;
     text-align:center;
 }  

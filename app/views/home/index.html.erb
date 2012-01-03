@@ -1,10 +1,11 @@
 <div id="wrapper">
 	<div id="header"> 
 		<%= form_tag(update_tweets_path) do -%>
-		  <div align='right' style="display:none"><%= submit_tag 'Update Tweets' %></div>
+		  <div align='right'style="display:none"><%= submit_tag 'Update Tweets' %></div>
+		  <span id="clear"><div style="position:relative;left:450px;top:120px"><%= submit_tag 'Clear Tags' %></div></span>
 		<% end -%>
-		<h1 style="position:relative;left:20px;top:5px"><font face="arial">infravironment</font></h1>
-			<p style="position:relative;left:220px;top:-20px"><font face="arial" size="1">Trademark</font></p>
+		<h1 style="position:relative;left:20px;top:30px"><font face="arial">infravironment</font></h1>
+			<p style="position:relative;left:220px;top:5px"><font face="arial" size="1">Trademark</font></p>
 		<font face="arial"><div style="position:relative;left:20px">Building Life Cycle Site</div></font>
 		<hr>
 	</div>
@@ -13,7 +14,7 @@
 	
 	<div id="sidebar">
 		<span id='one'><div id="r1"></div></span></br>
-		<span id='two'><div id="r2"></div></span></br>
+		<span id='two'><div id="r2" style="position:relative;top:-10px"></div></span></br>
 		<span id='three'><div id="r3"></div></span></br>
 		<span id='four'><div id="r4"></div></span></br>
 		<span id='five'><div id="r5"></div></span></br>
@@ -55,6 +56,9 @@ $("span#one").hover(
 		// Animation complete.
 	$("div#tweets5").hide('fast', function() {
 		// Animation complete.
+	$("div#tweets6").hide('fast', function() {
+					// Animation complete.
+	});
   	});	
   	});
   	});
@@ -76,6 +80,9 @@ $("span#two").hover(
 		// Animation complete.
 	$("div#tweets5").hide('fast', function() {
 		// Animation complete.
+	$("div#tweets6").hide('fast', function() {
+		// Animation complete.
+	});
   	});
   	});				
   	});
@@ -97,6 +104,9 @@ $("span#three").hover(
 		// Animation complete.
 	$("div#tweets5").hide('fast', function() {
 		// Animation complete.
+	$("div#tweets6").hide('fast', function() {
+		// Animation complete.
+	});
   	});
   	});				
   	});
@@ -118,6 +128,9 @@ $("span#four").hover(
 		// Animation complete.
 	$("div#tweets5").hide('fast', function() {
 		// Animation complete.  
+	$("div#tweets6").hide('fast', function() {
+		// Animation complete.
+	});
   	});
 	});				
   	});
@@ -140,6 +153,9 @@ $("span#five").hover(
 		// Animation complete.
 	$("div#tweets5").show('fast', function() {
 		// Animation complete.  
+	$("div#tweets6").hide('fast', function() {
+				// Animation complete.
+	});
   	});
 	});				
   	});
@@ -163,6 +179,30 @@ $("span#six").hover(
 	$("div#tweets5").hide('fast', function() {
 		// Animation complete.
 	$("div#tweets6").show('fast', function() {
+		// Animation complete.
+  	});
+  	});				
+  	});
+  	});
+  	});
+	});
+});
+</script>
+
+<script>
+$("span#clear").hover(
+  function () {
+    $("div#tweets1").hide('fast', function() {
+	    // Animation complete.
+	$("div#tweets2").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets3").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets4").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets5").hide('fast', function() {
+		// Animation complete.
+	$("div#tweets6").hide('fast', function() {
 		// Animation complete.
   	});
   	});				
