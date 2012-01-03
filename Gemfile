@@ -8,6 +8,7 @@ gem 'twitter-text'
 
 gem "pg", :group => :production
 gem "sqlite3-ruby", :group => :development
+gem "taps", :group => :development
 
 gem 'json'
 gem "execjs"

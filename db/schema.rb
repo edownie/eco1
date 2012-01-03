@@ -13,17 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20111223203654) do
 
-  create_table "econavigates", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "items", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "tweets", :force => true do |t|
     t.string   "tweet"
     t.string   "label"
