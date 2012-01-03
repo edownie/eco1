@@ -5,17 +5,29 @@ class HomeController < ApplicationController
       Tweet.find_by_label(tweet)
     end
     
+<<<<<<< HEAD
     @tweets2 = %w{ greenbuilding software incandescent }
+=======
+    @tweets2 = %w{ greenbuilding software incandescent gis energy greenrealestate economy cleantech walkability multimedia residential interactive }
+>>>>>>> aa9b05db97e90e6f2f94cab020cdac4d13678ddd
     @tweets2.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
     
+<<<<<<< HEAD
     @tweets3 = %w{ crm construction solar }
+=======
+    @tweets3 = %w{ crm construction solar microgrid biodiversity bim themesh collcons transit }
+>>>>>>> aa9b05db97e90e6f2f94cab020cdac4d13678ddd
     @tweets3.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
     
+<<<<<<< HEAD
     @tweets4 = %w{ inhabitat smallbusiness aiachat }
+=======
+    @tweets4 = %w{ inhabitat smallbusiness aiachat applab adaptivereuse cloudcomputing }
+>>>>>>> aa9b05db97e90e6f2f94cab020cdac4d13678ddd
     @tweets4.collect! do |tweet| 
       Tweet.find_by_label(tweet)
     end
