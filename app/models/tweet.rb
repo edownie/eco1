@@ -3,7 +3,7 @@ class Tweet < ActiveRecord::Base
     @tweet_hash_tags = [
       "architect", "economy", "sustainable", "crm", "science", "building", "environmental", "leadership", "conservation", "adaptivereuse", "iaq",
       "cleanair", "openinnovation", "greenbuilding", "software", "incandescent", "gis", "energysaving", "greenrealestate",
-      "construction", "solar", "biodiversity", "bim", "cloudcomputing", "inhabitat", "smallbusiness", "aiachat", "applab", "microgrid", "themesh", "collcons", "transit", "cleantech", "walkability", "multimedia", "residential"
+      "construction", "solar", "biodiversity", "bim", "cloudcomputing", "inhabitat", "smallbusiness", "aiachat", "applab", "microgrid", "themesh", "collcons", "transit", "cleantech", "walkability", "multimedia", "residential", "fuelcell"
        ]
        
     @tweet_hash_tags.each do |name|
