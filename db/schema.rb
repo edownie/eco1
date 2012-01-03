@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111223203654) do
+ActiveRecord::Schema.define(:version => 20120103215940) do
+
+  create_table "hashtags", :force => true do |t|
+    t.string   "name"
+    t.integer  "category"
+    t.integer  "tweet_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "tweets", :force => true do |t|
     t.string   "tweet"
