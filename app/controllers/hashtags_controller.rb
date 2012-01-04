@@ -2,7 +2,7 @@ class HashtagsController < ApplicationController
   # GET /hashtags
   # GET /hashtags.json
   def index
-    @hashtags = Hashtag.all
+    @hashtags = Hashtag.find(:all, :order => 'hashtags.category ASC')
 
     respond_to do |format|
       format.html # index.html.erb
