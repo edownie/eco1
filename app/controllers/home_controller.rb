@@ -15,7 +15,6 @@ class HomeController < ApplicationController
   end
   
   def update_tweets
-    Tweet.destroy_all
     Tweet.get_latest_tweets
     redirect_to home_index_path
   end
