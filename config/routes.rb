@@ -1,5 +1,9 @@
 Eco1::Application.routes.draw do
 
+  get "session/create"
+
+  get "session/destroy"
+
   resources :hashtags
 
   # The priority is based upon order of creation:
@@ -13,6 +17,9 @@ Eco1::Application.routes.draw do
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
    match 'home/update_tweets' => 'home#update_tweets', :as => :update_tweets
+   resources :sessions
+    match 'login' => 'sessions#create', :as => :login
+     match 'logout' => 'sessions#destroy', :as => :logout
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 

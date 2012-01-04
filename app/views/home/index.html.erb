@@ -1,6 +1,7 @@
 <div id="wrapper">
-	<div id="header"> 
-		  <span id="clear"><div style="position:relative;left:450px;top:120px"><%= submit_tag 'Clear Tags' %></div></span>
+	<div id="header">
+		<span><%= link_to 'Login', new_session_path %></span> | <span><%= if admin? == true then link_to "Hashtags", hashtags_path end %></span> | <span><%= if admin? == true then link_to "Logout", logout_path end %></span>
+		  <span id="clear"style="position:relative;left:450px;top:120px"><%= submit_tag 'Clear Tags' %></span>
 		<h1 style="position:relative;left:20px;top:30px"><font face="arial">infravironment</font></h1>
 			<p style="position:relative;left:220px;top:5px"><font face="arial" size="1">Trademark</font></p>
 		<font face="arial"><div style="position:relative;left:20px">Building Life Cycle Site</div></font>
