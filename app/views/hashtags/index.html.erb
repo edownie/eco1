@@ -1,5 +1,8 @@
 <h1>Listing hashtags</h1>
 
+
+<%= link_to 'Add Hashtag', new_hashtag_path %>
+
 <%= form_tag(update_tweets_path) do -%>
   <div align='center'><%= submit_tag 'Update Tweets' %></div>
 <% end -%>
@@ -7,8 +10,6 @@
   <tr>
     <th>Name</th>
     <th>Category</th>
-    <th>Tweet</th>
-    <th></th>
     <th></th>
     <th></th>
   </tr>
@@ -17,8 +18,6 @@
   <tr>
     <td><%= hashtag.name %></td>
     <td><%= hashtag.category %></td>
-    <td><%= hashtag.tweet_id %></td>
-    <td><%= link_to 'Show', hashtag %></td>
     <td><%= link_to 'Edit', edit_hashtag_path(hashtag) %></td>
     <td><%= button_to 'Destroy', hashtag, confirm: 'Are you sure?', :method => :delete %></td>
   </tr>
@@ -26,5 +25,3 @@
 </table>
 
 <br />
-
-<%= link_to 'New Hashtag', new_hashtag_path %>
