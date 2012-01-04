@@ -20,7 +20,7 @@
     <td><%= hashtag.tweet_id %></td>
     <td><%= link_to 'Show', hashtag %></td>
     <td><%= link_to 'Edit', edit_hashtag_path(hashtag) %></td>
-    <td><%= link_to 'Destroy', hashtag, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= button_to 'Destroy', hashtag, confirm: 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
