@@ -1,3 +1,10 @@
+<span><%= link_to 'Login', new_session_path %></span> <span id="clear"><%= submit_tag 'Clear Tags' %></span>
+<% if admin? == true then %>
+  <div>
+	<span><%= link_to "Hashtags", hashtags_path %></span> | <span><%= link_to "Logout", logout_path %></span>
+  </div>
+<% end %>
+
 <script>
 $("span#clear").hover(
   function () {
