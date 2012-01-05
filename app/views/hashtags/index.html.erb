@@ -1,11 +1,13 @@
 <h1><%= link_to 'Home', home_index_path %></h1>
 
 
+<% if admin? == true then %>
 <%= link_to 'Add Hashtag', new_hashtag_path %>
 
 <%= form_tag(update_tweets_path) do -%>
   <div align='center'><%= submit_tag 'Update Tweets' %></div>
 <% end -%>
+<% end %>
 <table>
   <tr>
     <th>Name</th>
@@ -18,8 +20,10 @@
   <tr>
     <td><%= hashtag.name %></td>
     <td><%= hashtag.category %></td>
+    <% if admin? == true then %>
     <td><%= link_to 'Edit', edit_hashtag_path(hashtag) %></td>
     <td><%= button_to 'Destroy', hashtag, confirm: 'Are you sure?', :method => :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
