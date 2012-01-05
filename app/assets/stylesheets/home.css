@@ -7,100 +7,20 @@
     background: #cdcdcd;  
 }  
 
-#r1 {  
-    background: #cdcdcd;  
-    float: center;  
-    width: 100px;  
-	height:30px;
-    background: #808080;
-}  
-
-#r2 {  
-    background: #cdcdcd;  
-    float: right;  
-    width: 100px;  
-	height:30px;
-    background: #808080;
-}
-  
-#r3 {  
-    background: #cdcdcd;  
-    float: center;  
-    width: 100px;  
-	height:30px;
-    background: #808080;
-}
-
-#r4 {  
-    background: #cdcdcd;  
-    float: right;  
-    width: 100px;  
-	height:30px;
-    background: #808080;
-}
-
-#r5 {  
+.r1 {  
     background: #cdcdcd;  
     float: left;  
     width: 100px;  
 	height:30px;
     background: #808080;
-}
+}  
 
-#r6 {  
+.r2 {  
     background: #cdcdcd;  
     float: right;  
     width: 100px;  
 	height:30px;
     background: #808080;
-}
-
-#r7 {  
-    background: #cdcdcd;  
-    float: center;  
-    width: 100px;  
-	height:30px;
-    background: #808080;
-}
-
-#r8 {  
-    background: #cdcdcd;  
-    float: center;  
-    width: 100px;  
-	height:30px;
-    background: #808080;
-}
-
-#r9 {  
-	background: #cdcdcd;  
-	float: center;  
-	width: 100px;  
-	height:30px;
-	background: #808080;
-}
-
-#r10 {  
-	background: #cdcdcd;  
-	float: center;  
-	width: 100px;  
-	height:30px;
-	background: #808080;
-}
-
-#r11 {  
-	background: #cdcdcd;  
-	float: center;  
-	width: 100px;  
-	height:30px;
-	background: #808080;
-}
-
-#r12 {  
-	background: #cdcdcd;  
-	float: center;  
-	width: 100px;  
-	height:30px;
-	background: #808080;
 }
 
 #sidebar {  
