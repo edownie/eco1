@@ -1,8 +1,10 @@
 Eco1::Application.routes.draw do
 
-  get "session/create"
-
-  get "session/destroy"
+  get "logout" => "sessions#destroy", :as => "logout"
+  get "login" => "sessions#new", :as => "login"
+  get "signup" => "users#new", :as => "signup"
+  root :to => "users#new"
+  resources :users
 
   resources :hashtags
 
@@ -17,9 +19,9 @@ Eco1::Application.routes.draw do
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
    match 'home/update_tweets' => 'home#update_tweets', :as => :update_tweets
-   resources :sessions
-    match 'login' => 'sessions#create', :as => :login
-     match 'logout' => 'sessions#destroy', :as => :logout
+   # resources :sessions
+   #  match 'login' => 'sessions#create', :as => :login
+   #   match 'logout' => 'sessions#destroy', :as => :logout
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
