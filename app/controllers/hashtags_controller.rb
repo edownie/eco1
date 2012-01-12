@@ -1,5 +1,6 @@
 class HashtagsController < ApplicationController
-  # GET /hashtags
+  http_basic_authenticate_with :name => "eco1", :password => "eco1"
+  # GET /hashtags 
   # GET /hashtags.json
   def index
     @hashtags = Hashtag.find(:all, :order => 'hashtags.category ASC')
