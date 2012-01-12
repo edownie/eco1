@@ -1,3 +1,11 @@
+a:visited {
+color:#000000;
+}
+
+a {
+color:#000000;
+}
+
 #wrapper {  
     width: 1000px;  
 }  
