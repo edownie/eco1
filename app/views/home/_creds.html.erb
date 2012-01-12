@@ -5,8 +5,8 @@
 	<p id="notice"><%= notice %><span align='right'><%= current_user.email %></span></p>
   </div>
 <% else %>
-<p id="notice"><%= notice %></p>
-<span id="clear"><%= submit_tag 'Clear Tags' %></span> <span><%= link_to 'Login', new_session_path %></span> | <span><%= link_to 'Signup', signup_path %>
+<span id="clear"><%= submit_tag 'Clear Tags' %></span> <span><%= link_to 'Login', new_session_path %></span> | <span><%= link_to 'Signup', signup_path %></br></br></br>
+	<p id="notice"><%= notice %></p>
 <% end %>
 
 <script>
