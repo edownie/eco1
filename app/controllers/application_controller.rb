@@ -1,24 +1,11 @@
 class ApplicationController < ActionController::Base
-  helper :all # include all helpers, all the time
 protect_from_forgery # See ActionController::RequestForgeryProtection for details
-# require 'lightbox_view_helper'
-helper_method :admin?
+# force_ssl
 
-protected
+private
 
-def pull_tweets
-  @tweet = Tweet.first
+def current_user
+  @current_user ||= User.find(session[:user_id]) if session[:user_id]
 end
-
-def authorize
-  unless admin?
-    flash[:notice] = "Unauthorized access"
-    redirect_to hashtags_path
-    false
-  end
-end
-
-def admin?
-  session[:password] == "eco2012"
-end
+helper_method :current_user
 end

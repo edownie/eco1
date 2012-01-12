@@ -1,14 +1,20 @@
 class SessionsController < ApplicationController
+  def new
+  end
+  
   def create
-    session[:password] = params[:password]
-    flash[:notice] = "Successfully logged in"
-    redirect_to hashtags_path
+    user = User.find_by_email(params[:email])
+    if user && user.authenticate(params[:password])
+      puts session[:user_id] = user.id
+      redirect_to root_url, :notice => "Logged in!"
+    else
+      flash.now.alert = "Invalid email or password"
+      render "new"
+    end
   end
 
   def destroy
-    reset_session
-    flash[:notice] = "Successfully logged out"
-    redirect_to root_path
+    session[:user_id] = nil
+    redirect_to root_url, :notice => "Logged out!"
   end
-
 end
