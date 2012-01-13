@@ -1,4 +1,8 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+.creds-form {
+	background: #A4A4A4;
+	padding: 2em;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 30px;
+	border: solid #000 3px;
+}
