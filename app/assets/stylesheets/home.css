@@ -13,6 +13,9 @@ color:#000000;
   
 #header {  
     background: #cdcdcd;  
+	border-color:#009933;
+	border-style:solid;
+	padding-bottom:1em;
 }  
 
 .r1 {  
@@ -51,5 +54,6 @@ color:#000000;
 p.text {
 	text-align:center;
 	padding:2em;
-	background:#F00000;
+	background:#99FFCC;
+	font-weight:bold;
 }
