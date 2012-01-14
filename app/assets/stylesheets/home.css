@@ -55,6 +55,7 @@ p.text-green {
 	text-align:center;
 	padding:2em;
 	background:#99FFCC;
+	border-style:solid;
 	font-weight:bold;
 }
 
@@ -62,5 +63,6 @@ p.text-red {
 	text-align:center;
 	padding:2em;
 	background:#FFC1C1;
+	border-style:solid;
 	font-weight:bold;
 }
