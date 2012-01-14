@@ -51,9 +51,16 @@ color:#000000;
 	float: right;
 }
 
-p.text {
+p.text-green {
 	text-align:center;
 	padding:2em;
 	background:#99FFCC;
+	font-weight:bold;
+}
+
+p.text-red {
+	text-align:center;
+	padding:2em;
+	background:#FFC1C1;
 	font-weight:bold;
 }

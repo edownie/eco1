@@ -13,7 +13,11 @@
 </table>
 <hr>
 
+<% if current_user %>
 <p class='text'>#### HALO TEXT 7 ####</p>
+<% else %>
+  <p class='text-red'>Signup To View Comments ( <%= link_to 'Click Here', signup_path %> )</p>
+<% end %>
 
 <script>
 $("span#seven").hover(
