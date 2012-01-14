@@ -47,3 +47,9 @@ color:#000000;
 #creds {
 	float: right;
 }
+
+p.text {
+	text-align:center;
+	padding:2em;
+	background:#F00000;
+}
