@@ -13,32 +13,21 @@
 
 ActiveRecord::Schema.define(:version => 20120107193024) do
 
-  create_table "econavigates", :force => true do |t|
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-  end
-
   create_table "hashtags", :force => true do |t|
-    t.string    "name"
-    t.integer   "category"
-    t.integer   "tweet_id"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-  end
-
-  create_table "items", :force => true do |t|
-    t.string    "name"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.string   "name"
+    t.integer  "category"
+    t.integer  "tweet_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "tweets", :force => true do |t|
-    t.string    "tweet"
-    t.string    "label"
-    t.string    "author"
-    t.integer   "hashtag_id"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.string   "tweet"
+    t.string   "label"
+    t.string   "author"
+    t.integer  "hashtag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
