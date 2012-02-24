@@ -3,6 +3,7 @@
 <head>
   <title>arkhisocial</title>
   <%= stylesheet_link_tag "home", "users" %>
+  <%= stylesheet_link_tag 'mobile' if mobile_device? %>
   <%= javascript_include_tag "jquery", "jquery-qtip" %>
   <%= csrf_meta_tags %>
 </head>
