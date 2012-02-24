@@ -2,8 +2,13 @@
 <% if current_user then %>
 	<p class='text-green'><span id="clear"><%= submit_tag 'Clear Tags' %></span> <span><%= link_to "Hashtags", hashtags_path %></span> | <span><%= link_to "Logout", logout_path %></span></br>
 	<p id="notice"><%= notice %><span align='right'><%= current_user.email %></span></p</p>
+	<% if mobile_device? %> 
+			<%= link_to "Full Site", :mobile => 0 %> 
+		<% else %> 
+			<%= link_to "Mobile Site", :mobile => 1 %> 
+		<% end %>
 <% else %>
-   <p class='text-red'><span id="clear"><%= submit_tag 'Clear Tags' %></span> <span><%= link_to 'Login', new_session_path %></span> | <span><%= link_to 'Signup', signup_path %></br>
+   <p class='text-red'><span id="clear"><%= submit_tag 'Clear Tags' %></span> <span><%= link_to 'Login', new_session_path %></span> | <span><%= link_to 'Signup', signup_path %></span></br>
 	<p id="notice"><%= notice %></p></p>
 <% end %>
 </div>
