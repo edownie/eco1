@@ -1,5 +1,32 @@
 <h1>INFRAVIRONMENT</h1><h3>(MOBILE)</h3>
-<p> HI NAN</p>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+<% @tweets1.each do |tweet| %>
+  <tr>
+	<td>~</td>
+	<td id="clickme">#<a href="http://twitter.com/#!/search/realtime/%23<%= tweet.label %>" target="new"><%= tweet.label %></a></td>
+    <td><%= tweet.tweet %></td>
+  </tr>
+<% end %>
+</table>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+<% @tweets2.each do |tweet| %>
+  <tr>
+	<td>~</td>
+	<td id="clickme">#<a href="http://twitter.com/#!/search/realtime/%23<%= tweet.label %>" target="new"><%= tweet.label %></a></td>
+    <td><%= tweet.tweet %></td>
+  </tr>
+<% end %>
+</table>
+
 	
 	<% if mobile_device? %> 
 		<%= link_to "Full Site", :mobile => 0 %> 
