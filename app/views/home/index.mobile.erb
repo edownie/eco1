@@ -1,3 +1,8 @@
+<% if mobile_device? %> 
+	<%= link_to "Full Site", :mobile => 0 %> 
+<% else %> 
+	<%= link_to "Mobile Site", :mobile => 1 %> 
+<% end %>
 <h1>INFRAVIRONMENT</h1><h3>(MOBILE)</h3>
 <table>
   <tr>
@@ -28,8 +33,3 @@
 </table>
 
 	
-	<% if mobile_device? %> 
-		<%= link_to "Full Site", :mobile => 0 %> 
-	<% else %> 
-		<%= link_to "Mobile Site", :mobile => 1 %> 
-	<% end %>
