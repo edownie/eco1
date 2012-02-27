@@ -1,18 +1,19 @@
-<aside id="mobile_header">
+<header id="mobile_header">
 
 <h1>INFRAVIRONMENT</h1><h3>(MOBILE)</h3>
-</aside>
+</header>
 <aside id="mobile_tweets">
-<% @tweets1.each do |tweet| %>
+<% @all_tweets.each do |tweet| %>
 
 	#<a href="http://twitter.com/#!/search/realtime/%23<%= tweet.label %>" target="new"><%= tweet.label %></a></br>
     <%= tweet.tweet %></br></br></br>
 <% end %>
 </aside>
-	
-	
+
+<footer>
 	<% if mobile_device? %> 
 		<%= link_to "Full Site", :mobile => 0 %> 
 	<% else %> 
 		<%= link_to "Mobile Site", :mobile => 1 %> 
 	<% end %>
+</footer>
