@@ -5,7 +5,7 @@ class Tweet < ActiveRecord::Base
        
     @tweet_hash_tags.each do |tweet|
       @name = Twitter.search("#" + "#{tweet.name} -rt").first.text unless Twitter.search("#" + "#{tweet.name} -rt").first == nil
-      sleep 8
+      sleep 3
       Tweet.create!(:tweet => "#{@name}", :label => "#{tweet.name}", :hashtag_id => "#{tweet.category}")
     end
 
