@@ -1,9 +1,12 @@
 .mobile_header {
 	float: center;
 	text-align: center;
-	padding-right:1em;
-	text-shadow: #DDD 10px 10px 2px;
-	font-size:50px;
+	padding:.5em;
+	margin:1em;
+	text-shadow: black 0.2em 0.2em 0.2em;
+	color:white;
+	background-color: #565A5B;
+	font-size:40px;
 	border: 10px solid gray;
 }
 
@@ -15,6 +18,19 @@
 	font-size:50px;
 }
 
+.remoduvate {
+	text-align: center;
+	font-size:50px;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	color: black;
+}
+
+.remodivate a.visited {
+color: black;
+}
+#.emodivate a.link {
+color: black;
+}
 footer {
 	text-align:center;
 }
