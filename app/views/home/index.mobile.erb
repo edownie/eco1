@@ -1,16 +1,19 @@
-<header id="mobile_header">
+<header class="mobile_header">
 
 <h1>INFRAVIRONMENT</h1><h3>(MOBILE)</h3>
 </header>
-<aside id="mobile_tweets">
+<aside class="mobile_tweets">
 <% @all_tweets.each do |tweet| %>
 
 	#<a href="http://twitter.com/#!/search/realtime/%23<%= tweet.label %>" target="new"><%= tweet.label %></a></br>
     <%= tweet.tweet %></br></br><hr/></br>
 <% end %>
 </aside>
+<footer class="footer">
+<%= link_to (image_tag 'office.png', :height => '70', :width => '70', :class => "header_image"), root_path %><br/>
 
-<footer>
+
+
 	<% if mobile_device? %> 
 		<%= link_to "Full Site", :mobile => 0 %> 
 	<% else %> 

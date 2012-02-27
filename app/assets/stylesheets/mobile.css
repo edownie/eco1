@@ -1,4 +1,4 @@
-#mobile_header {
+.mobile_header {
 	float: center;
 	text-align: center;
 	padding-right:1em;
@@ -7,10 +7,14 @@
 	border: 10px solid gray;
 }
 
-#mobile_tweets {
+.mobile_tweets {
 	padding-top:1em;
 	float: center;
 	text-align: center;
 	padding-right:1em;
 	font-size:50px;
+}
+
+footer {
+	text-align:center;
 }
