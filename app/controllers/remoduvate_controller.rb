@@ -1,0 +1,2 @@
+class RemoduvateController < ApplicationController
+end
