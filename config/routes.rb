@@ -1,5 +1,7 @@
 Eco1::Application.routes.draw do
 
+  get "resume/index"
+
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
@@ -14,6 +16,7 @@ Eco1::Application.routes.draw do
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
+  match 'resume' => 'resume/index'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
