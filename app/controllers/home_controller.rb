@@ -19,5 +19,9 @@ class HomeController < ApplicationController
     Tweet.get_latest_tweets
     redirect_to home_index_path
   end
+  
+  def resume
+    
+  end
 
 end
