@@ -3,6 +3,12 @@
     <th></th>
     <th></th>
   </tr>
+<% if current_user %>
+<p class='text-green'><font face="arial">test</p>
+<% else %>
+  <p class='text-red'><font face="arial" size="6" color="#808080">green efficiency </font><font face="arial" color="#808080"><u>netgreenbuilding</u></font></br>
+<font face="arial" color="#ffffff">Signup to view comments</font></p>
+<% end %>
 <% @tweets3.each do |tweet| %>
   <tr>
 	<td>~</td>
@@ -13,11 +19,7 @@
 </table>
 <hr>
 
-<% if current_user %>
-<p class='text-green'><font face="arial">/disruptive_stability/location</p>
-<% else %>
-  <p class='text-red'>Signup to view comments</p>
-<% end %>
+
 
 <script>
 $("span#three").hover(

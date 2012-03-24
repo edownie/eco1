@@ -5,6 +5,14 @@
 
 
   </tr>
+<% if current_user %>
+  <p class='text-green'><font face="arial">test</font></p>
+<% else %>
+  <p class='text-red'><font face="arial" size="6" color="#808080">green performance </font><font face="arial" color="#808080"><u>netgreenbuilding</u></font></br>
+	<a href="http://www.continuingarchitect.com/" target="blank"><font face="arial">http://www.continuingarchitect.com/</a></br>
+	<font face="arial" color="#ffffff">Signup to view comments</font>
+	</p>
+<% end %>
 <% @tweets1.each do |tweet| %>
   <tr>
 	<td>~</td>
@@ -15,11 +23,7 @@
 </table>
 <hr>
 
-<% if current_user %>
-  <p class='text-green'><font face="arial">/disruptive_stability/value</font></p>
-<% else %>
-  <p class='text-red'><font face="arial" size="6" color="#808080">netgreenbuilding</font><font face="arial">green performance</font></br>Signup to view comments</p>
-<% end %>
+
 <script>
 
 $("span#one").hover(

@@ -3,21 +3,22 @@
     <th></th>
     <th></th>
   </tr>
-<% @tweets2.each do |tweet| %>
+</table>
+
+
+<% if current_user %>
+<p class='text-green'><font face="arial">comments</p>
+<% else %>
+<p class='text-red'><font face="arial" size="6" color="#808080">green perspective </font><font face="arial" color="#808080"><u>netgreenbuilding</u></font></br><a href="http://www.fldbia.org/Documents/AIA%20DB%20%20Dorwin%20Thomas%20presentation.pdf" target="blank"><font face="arial">http://www.fldbia.org/Documents/AIA%20DB%20%20Dorwin%20Thomas%20presentation.pdf</a></br><font face="arial" color="#ffffff">Signup to view comments</font></p>
+<% end %><% @tweets2.each do |tweet| %>
   <tr>
 	<td>~</td>
 	<td id="clickme">#<a href="http://twitter.com/#!/search/realtime/%23<%= tweet.label %>" target="new"><%= tweet.label %></a></td>
     <td><%= tweet.tweet %></td>
   </tr>
-<% end %>
-</table>
 <hr>
-
-<% if current_user %>
-<p class='text-green'><font face="arial">comments</p>
-<% else %>
-  <p class='text-red'>Signup to view comments</p>
 <% end %>
+
 
 <script>
 $("span#two").hover(

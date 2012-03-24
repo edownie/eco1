@@ -3,6 +3,14 @@
     <th></th>
     <th></th>
   </tr>
+<% if current_user %>
+<p class='text-green'>test</p>
+<% else %>
+ <p class='text-red'><font face="arial" size="6" color="#808080">green operation </font><font face="arial" color="#808080"><u>netgreenbuilding</u></font></br>
+	<a href="http://lms.architect-forum.com/index.php" target="blank"><font face="arial">http://lms.architect-forum.com/index.php</a></br>
+	<font face="arial" color="#ffffff">Signup to view comments</p>
+<% end %>
+
 <% @tweets12.each do |tweet| %>
   <tr>
 	<td>~</td>
@@ -13,11 +21,6 @@
 </table>
 <hr>
 
-<% if current_user %>
-<p class='text-green'>/disruptive_stability/certification</p>
-<% else %>
-  <p class='text-red'>Signup to view comments</p>
-<% end %>
 
 <script>
 $("span#twelve").hover(
