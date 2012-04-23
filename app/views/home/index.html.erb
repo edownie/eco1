@@ -1,26 +1,73 @@
+
 <div id='creds'><%= render :partial => 'creds' %></div>
 <div id="wrapper">
 
+    <p style="position:absolute;left:500px;top:670px"><font face="arial" size="2">portfolio (the 1 is to clear images ==>)</font></p>
+
+	<div id="slides" style="position:absolute;left:180px;top:100px;z-index:-1">
+	  <div class="slides_container">
+	    <div style="display:none">
+	      <h1>Slide 1</h1>
+	      <!--<%= link_to (image_tag 'IMG_1721.JPG', :height => '500', :width => '500', :class => "header_image") %>-->
+	    </div>
+	    <div>
+	      <h1>Slide 2</h1>
+	      <%= link_to (image_tag 'CONSTRUCTION94.JPG', :height => '500', :width => '500', :class => "header_image") %>
+	    </div>
+	    <div>
+	      <h1>Slide 3</h1>
+	      <%= link_to (image_tag 'IMG_1721.JPG', :height => '500', :width => '500', :class => "header_image") %>
+	    </div>
+	    <div>
+	      <h1>Slide 4</h1>
+	      <%= link_to (image_tag 'CONSTRUCTION08.JPG', :height => '500', :width => '500', :class => "header_image") %>
+	    </div>
+		<div>
+	      <h1>Slide 5</h1>
+	      <%= link_to (image_tag 'CONSTRUCTION00.JPG', :height => '500', :width => '500', :class => "header_image") %>
+	    </div>
+		<div>
+	      <h1>Slide 6</h1>
+	      <%= link_to (image_tag 'RENDERING92.JPG', :height => '500', :width => '500', :class => "header_image") %>
+	    </div>	  
+	  </div>
+	</div>
+	<style type="text/css" media="screen">
+	  .slides_container {
+	    width:570px;
+	    height:570px;
+	  }
+	  .slides_container div {
+	    width:570px;
+	    height:570px;
+	    display:block;
+	  }
+	</style>
+	<script>
+	  $(function(){
+	    $("#slides").slides();
+	  });
+	</script>
 	<p style="position:absolute;top:650px;left:30px"><font face="arial" size="1">Disclaimer: Use </br> constitutes acceptance that </br> the owner of this site cannot </br> guarantee and shall under </br> no circumstances be held </br> responsible for the local </br> recombination of any request, </br> cache, password, readout, </br> email, policy, input, </br> file, identity, service, </br> download, agreement, tracking, </br> session, product, logon, </br> or chat that is </br> transmitted in packets.</font></p>
-    <p style="position:absolute;left:30px;top:1100px"><font face="arial" size="1">C netgreenbuilding 2011</font></p>
+    <p style="position:absolute;left:30px;top:1100px"><font face="arial" size="2">C netgreenbuilding 2011</font></p>
 
 	<div id="sidebar">
-		<span id='one' class="r1"><font face="arial" size="1" color="#ccc">green performance</font></span></br>
-		<span id='two' class="r2"><font face="arial" size="1" color="#ccc">green perspective</font></span></br>
-		<span id='three' class="r1"><font face="arial" size="1" color="#ccc">green efficiency</font></span></br>
+		<span id='one' class="r1"><font face="arial" size="1" color="#ccc">social fit-out</font></span></br>
+		<span id='two' class="r2"><font face="arial" size="1" color="#ccc">energy perspective</font></span></br>
+		<span id='three' class="r1"><font face="arial" size="1" color="#ccc">hybrid rehab</font></span></br>
 		<span id='four' class="r2"><font face="arial" size="1" color="#ccc">intelligent facilities</font></span></br>
 		<span id='five' class="r1"><font face="arial" size="1" color="#ccc">regional sustainability</font></span></br>
-		<span id='six' class="r2"><font face="arial" size="1" color="#ccc">green neighborhood</font></span></br>
+		<span id='six' class="r2"><font face="arial" size="1" color="#ccc">eco neighborhood</font></span></br>
 		<span id='seven' class="r1"><font face="arial" size="1" color="#ccc">green disciplines</font></span></br>
-		<span id='eight' class="r2"><font face="arial" size="1" color="#ccc">capital projects</font></span></br>
-		<span id='nine' class="r1"><font face="arial" size="1" color="#ccc">green remodel</font></span></br>
-		<span id='ten' class="r2"><font face="arial" size="1" color="#ccc">green practice</font></span></br>
-		<span id='eleven' class="r1"><font face="arial" size="1" color="#ccc">green preservation</font></span></br>
-		<span id='twelve' class="r2"><font face="arial" size="1" color="#ccc">green operation</font></span></br>
+		<span id='eight' class="r2"><font face="arial" size="1" color="#ccc">urban cleantech</font></span></br>
+		<span id='nine' class="r1"><font face="arial" size="1" color="#ccc">symbiotic remodel</font></span></br>
+		<span id='ten' class="r2"><font face="arial" size="1" color="#ccc">transparent process</font></span></br>
+		<span id='eleven' class="r1"><font face="arial" size="1" color="#ccc">smart restoration</font></span></br>
+		<span id='twelve' class="r2"><font face="arial" size="1" color="#ccc">site power</font></span></br>
 	</div>
 
 	<div id="content">
-	    <%= link_to (image_tag 'IMG_1721.JPG', :height => '100', :width => '100', :class => "header_image") %>
+	    <!--<%= link_to (image_tag 'IMG_1721.JPG', :height => '100', :width => '100', :class => "header_image") %>-->
 		<div id='tweets1' style="display:none"><%= render :partial => 'tweets1' %></div>
 		<div id='tweets2' style="display:none"><%= render :partial => 'tweets2' %></div>
 		<div id='tweets3' style="display:none"><%= render :partial => 'tweets3' %></div>
@@ -35,3 +82,4 @@
 		<div id='tweets12' style="display:none"><%= render :partial => 'tweets12' %></div>
 	</div>
 </wrapper>
+
