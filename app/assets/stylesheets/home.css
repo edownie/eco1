@@ -10,11 +10,16 @@ color:#000000;
     width: 1000px;  
 }  
   
+#pagination {  
+    top: 100px;  
+}  
+
   
 #header {  
     background: #cdcdcd;  
 	border-style:solid;
 	padding-bottom:1em;
+	z-index:-5;
 }  
 
 .r1 {  
