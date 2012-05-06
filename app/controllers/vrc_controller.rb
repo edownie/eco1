@@ -1,0 +1,2 @@
+class VrcController < ApplicationController
+end

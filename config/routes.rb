@@ -1,18 +1,21 @@
 Eco1::Application.routes.draw do
 
   get "resume/index"
+  get "vrc/index"
 
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
   match "resume" => "resume#index", :as => "resume"
   
+  
   resources :users
   resources :sessions
 
   resources :hashtags
   resources :remoduvate
-
+  resources :vrc
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
